@@ -20,8 +20,8 @@ class PostFactory extends Factory
             'title' => fake()->sentence(),
             'slug' => fake()->slug(),
             'content' => fake()->paragraph(10),
-            'user_id' => fake()->randomDigit(),
-            'category_id' => fake()->randomDigit(),
+            'user_id' => fake()->randomDigitNotNull(),
+            'category_id' => fake()->randomDigitNotNull(),
             'approved' => fake()->randomElement([0, 1])
         ];
     }

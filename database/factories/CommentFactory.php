@@ -18,8 +18,8 @@ class CommentFactory extends Factory
     {
         return [
             //
-            'user_id' => fake()->randomDigit(),
-            'post_id' => fake()->randomDigit(),
+            'user_id' => fake()->randomDigitNotNull(),
+            'post_id' => fake()->randomDigitNotNull(),
             'content' => fake()->sentence()
         ];
     }
